@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Function</title>
+  </head>
+  <body>
+    <script>
+      for (var x = 1; x <= 10; x++) {
+        Hello();
+        Addition(x, x);
+        multipleTable(x);
+        document.write(Return());
+      }
+
+      function Hello() {
+        document.writeln("Hello World <br/>");
+      }
+
+      function Addition(a, b) {
+        document.write(a + b + "<br/>");
+      }
+
+      function multipleTable(n) {
+        for (let index = 1; index <= 10; index++) {
+          document.write(n + "x" + index + "=" + n * index + "<br/>");
+        }
+      }
+
+      function Return() {
+        var x = 10;
+        var y = 20;
+        return x + y;
+      }
+    </script>
+  </body>
+</html>

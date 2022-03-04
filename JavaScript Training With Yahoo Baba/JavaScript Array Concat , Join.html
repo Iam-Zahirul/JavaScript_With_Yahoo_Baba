@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Concat and Join</title>
+  </head>
+  <body>
+    <script>
+      var x = ["Zahirul", "Islam", "Bangladesh"];
+      var y = ["Mahir", "Redwan"];
+
+      var z = x.concat(y);
+      document.write(z + "<br/>");
+
+      var m = x.concat(y, z);
+      document.write(m + "<br/>");
+
+      var w = m.join(" $ ");
+      document.write(w + "<br/>");
+    </script>
+  </body>
+</html>

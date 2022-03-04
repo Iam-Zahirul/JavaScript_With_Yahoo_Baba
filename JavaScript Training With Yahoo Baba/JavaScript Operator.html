@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Operator</title>
+  </head>
+  <body>
+    <script>
+      //Arithmetic Operator
+      var a = 60;
+      var b = 30;
+      console.log(a + b);
+      console.log(a - b);
+      console.log(a / b);
+      console.log(a * b);
+      console.log(a % b);
+      console.log(a++);
+      console.log(++a);
+      console.log(a--);
+      console.log(--a);
+      console.log(2 ** 3);
+      console.log((2 + 3) ** 3);
+
+      //Assignment Operator
+      var x = 100;
+      var y = 20;
+      console.log((x = y));
+      console.log((x += y));
+      console.log((x -= y));
+      console.log((x *= y));
+      console.log((x /= y));
+      console.log((x %= y));
+      console.log((x **= y));
+
+      //Comparison Operator
+      var m = 15;
+      var n = 25;
+
+      console.log(m == n); // Equal Value
+      console.log(m === n); // Equal Value and Type
+      console.log(m != n); // Not Equal
+      console.log(m !== n); //Not Equal Value Or Not Equal Type
+      console.log(m > n); //Greater Than
+      console.log(m < n); //Less Than
+      console.log(m >= n); //Greater Than Or Equall
+      console.log(m <= n); //Less Than Or Equall
+
+      //Logical Operator
+
+      var p = "Zahirul";
+      var q = "Alam";
+      var age = 17;
+
+      if (typeof p === "string" && typeof q === "string" && age >= 18) {
+        document.write("You are passed!");
+      } else {
+        document.write("Sorry! You are failed!");
+      }
+
+      //Ternary Operator
+      age >= 18 ? (t = "true") : (f = "false");
+      
+    </script>
+  </body>
+</html>

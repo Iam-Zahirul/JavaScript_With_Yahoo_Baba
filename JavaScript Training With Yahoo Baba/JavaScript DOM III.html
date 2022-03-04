@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript DOM III</title>
+  </head>
+  <body>
+    <p id="Task">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+      quam.
+    </p>
+
+    <p id="TaskOne">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+      quam.
+    </p>
+
+    <p id="TaskTwo">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+      quam.
+    </p>
+
+    <p id="TaskThree">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+      quam.
+    </p>
+
+    <p class="Item">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+      quam.
+    </p>
+    <p class="Item">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+      quam.
+    </p>
+    <p class="Item">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+      quam.
+    </p>
+
+    <h2>Heading Two</h2>
+    <h2>Heading Two</h2>
+    <h2>Heading Two</h2>
+    <h2>Heading Two</h2>
+    <script>
+      document.getElementById("Task").innerText = "Hello World";
+      document.getElementById("TaskOne").textContent = "Hello Bangladesh";
+      document.getElementById("TaskTwo").innerHTML =
+        "<h1>Hello Bangladesh</h1>";
+      document.getElementById("TaskThree").style.backgroundColor = "red";
+
+      var Item = document.getElementsByClassName("Item");
+      for (let index = 0; index < Item.length; index++) {
+        Item[index].style.backgroundColor = "yellow";
+      }
+
+      var Tag = document.getElementsByTagName("h2");
+      for (let index = 0; index < Tag.length; index++) {
+        Tag[index].style.backgroundColor = "green";
+      }
+
+      
+    </script>
+  </body>
+</html>

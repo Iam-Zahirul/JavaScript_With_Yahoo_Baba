@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript DOM</title>
+  </head>
+  <body>
+    <p id="demo">Paragraph</p>
+    <p id="demo">Paragraph</p>
+
+    <h1>Heading One</h1>
+    <h1>Heading One</h1>
+
+    <div class="Box">This is division.</div>
+    <div class="Box">This is division.</div>
+
+    <h2 class="BOX">Heading Two</h2>
+    <h2 class="BOX">Heading Two</h2>
+
+    <a href="">Click</a>
+    <a href="">Click Here</a>
+    <p id="Box"></p>
+
+    <script>
+      const element = document.getElementById("demo");
+      console.log(element);
+
+      const component = document.getElementsByTagName("h1");
+      console.log(component);
+
+      const material = document.getElementsByClassName("Box");
+      console.log(material);
+
+      const container = document.querySelectorAll("h2.BOX");
+      console.log(container);
+
+      const anchor = document.anchors.length;
+      console.log(anchor);
+
+      document.getElementById("Box").innerHTML=document.body.innerHTML;
+    </script>
+  </body>
+</html>

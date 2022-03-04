@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Push and Pop</title>
+  </head>
+  <body>
+    <script>
+      var a = [23, 10, 20, 30, 21];
+      document.write(a);
+      document.write("<br/>");
+      a.pop();
+      for (var i = a.length; i >= 0; i--) {
+        a.pop();
+      }
+      document.write(a);
+      a.push(19);
+
+      var k = [11, 12, 13, 14];
+      for (var i = k.length; i >= 0; i--) {
+        a.push(k[i]);
+      }
+      document.write(a);
+    </script>
+  </body>
+</html>

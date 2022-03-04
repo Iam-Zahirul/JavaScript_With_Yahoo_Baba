@@ -1,0 +1,33 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+.income {
+  text-align: center;
+}
+.text-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input {
+  padding: 0.5rem;
+}
+
+.btn {
+  width: 198px;
+  height: 40px;
+  background-color: #59a5ff;
+  color: white;
+  margin-left: 330px;
+}
+.btn:hover {
+    width: 198px;
+    height: 40px;
+  background-color: navy;
+  color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

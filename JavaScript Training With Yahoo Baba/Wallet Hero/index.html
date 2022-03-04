@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet Hero</title>
+    <link rel="shortcut icon" href="images/favico.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                headerback:'#FFFBF0',
+              }
+            }
+          }
+        }
+      </script>
+      <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header -->
+   <header class="w-full " >
+    <img class="mx-auto"  src="images/logo.png" alt="">
+   </header>
+   <!-- Main Section -->
+   <main class="h-screen">
+
+<div class="container h-screen w-auto px-16 mx-auto mt-24 grid grid-cols-2">
+    <div class="image-Section">
+<img src="images/image.jpg" alt="" class="ring-4  ">
+    </div>
+    <div class="image-Section">
+                    <h3 class="text-3xl income mb-4">Income</h3>
+                    <div class="text-input px-44 ">
+                        <h3 class="text-2xl income mb-2 mr-4">Income :</h3>
+                        <input type="text" class="bg-slate-200 input">
+                    </div>
+                    <h3 class="text-3xl income mb-6 mt-2">Expenses</h3>
+                    <div >
+                        <div class="text-input px-44 pb-4 ">
+                        <h3 class="text-2xl income mb-2 mr-4">Food : </h3>
+                        <input type="text" class="bg-slate-200 input">
+                    </div>
+                        <div class="text-input px-44 pb-4">
+                        <h3 class="text-2xl income mb-2 mr-4">Rent : </h3>
+                        <input type="text" class="bg-slate-200 input">
+                    </div>
+                        <div class="text-input px-44  pb-4">
+                        <h3 class="text-2xl income mb-2 mr-4">Clothes : </h3>
+                        <input type="text" class="bg-slate-200 input">
+                    </div>
+                    <button class="btn "> Calculate</button>
+                    </div>
+                    <h3 class="text-2xl income mb-4 mt-4">Total Expenses : <span id="totalExpenses">00</span></h3>
+                    <h3 class="text-2xl income mb-4 mt-4">Balance : <span id="totalBalance">00</span></h3>
+                    
+    </div>
+ 
+   </main>
+    
+    <!-- Script Files -->
+    <script src="js/script.js"></script>
+    <script src="js/tailwind.config.js"></script>
+</body>
+</html>

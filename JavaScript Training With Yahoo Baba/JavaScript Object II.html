@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Object</title>
+  </head>
+  <body>
+    <script>
+      var a = new Object();
+      var x = new Array();
+
+      a.firstName = "Nevadia";
+      a.lastName = "Technology";
+      a.age = 7;
+
+      x[0] = "Zahirul";
+      x[1] = "Islam";
+      x[2] = 27;
+
+      document.write(a.firstName + " " + a.lastName + " " + a.age);
+
+      for (var i = 0; i < x.length; i++) {
+        document.write(x[i]);
+      }
+
+      var student = [
+        { Name: "Zahirul Islam", Age: 27, DOB_Year: 1995 },
+        { Name: "Mahirul Islam", Age: 27, DOB_Year: 1995 },
+        { Name: "Rahinul Islam", Age: 27, DOB_Year: 1995 },
+      ];
+      document.write(student);
+
+      for (var i = 0; i < student.length; i++) {
+        document.write(
+          student[i].Name + "<br/>" + student[i].Age + "<br/>" + student[i].Name
+        );
+      }
+    </script>
+  </body>
+</html>

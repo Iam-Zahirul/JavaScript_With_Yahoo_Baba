@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript DOM</title>
+  </head>
+  <body>
+    <div class="Conatiner">
+      <p class="item">Hello World 1</p>
+      <p class="item">Hello World 2</p>
+      <p class="item">Hello World 3</p>
+      <p class="item">Hello World 4</p>
+      <p class="item">Hello World 5</p>
+    </div>
+
+    <script>
+      var Parent = document.querySelector("Container");
+      var Children = Parent.children;
+
+      console.log(Children);
+    </script>
+  </body>
+</html>
